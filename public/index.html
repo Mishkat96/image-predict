@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROWDY Image Count</title>
+    <link rel="stylesheet" href="/styles.css"> 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+
+    <div class="container">
+        <div class="card" >
+            <h1 class="text-2xl font-bold mb-4 text-center">CROWDY</h1>
+
+            <div class="result">
+                <h2 class="text-lg font-semibold mb-2">Result:</h2>
+                <div class="total-count">
+                    <h2 class="text-lg font-semibold mb-2">Total Head Count:</h2>
+                    <p id="totalCount"></p>
+                </div>
+                <div class="cameras">
+                    <div id="chart1Container">
+                        <h3 class="text-base font-semibold mb-1">Cam 1</h3>
+                        <img id="cam1Image" width="600" height="300" />
+                        <p id="cam1Count"></p>
+                        <canvas id="headCountChart1" width="600" height="300"></canvas>
+                    </div>
+                    <div id="chart2Container">
+                        <h3 class="text-base font-semibold mb-1">Cam 2</h3>
+                        <img id="cam2Image" width="600" height="300" />
+                        <p id="cam2Count"></p>
+                        <canvas id="headCountChart2" width="600" height="300"></canvas>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
